@@ -15,6 +15,13 @@
 		1B06FE101D6728FF004FDA7D /* YHPGuideAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B06FE081D6728FF004FDA7D /* YHPGuideAccount.m */; };
 		1B47D3D71D60567E00544408 /* Mapbox.framework in Embed Binaries */ = {isa = PBXBuildFile; fileRef = 1B47D3D51D60567E00544408 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1BACBC141D6ABE1700A18110 /* YHPFMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BACBC131D6ABE1700A18110 /* YHPFMDBViewController.m */; };
+		1BACBC211D6AC14200A18110 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BACBC171D6AC14200A18110 /* FMDatabase.m */; };
+		1BACBC221D6AC14200A18110 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BACBC191D6AC14200A18110 /* FMDatabaseAdditions.m */; };
+		1BACBC231D6AC14200A18110 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BACBC1B1D6AC14200A18110 /* FMDatabasePool.m */; };
+		1BACBC241D6AC14200A18110 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BACBC1D1D6AC14200A18110 /* FMDatabaseQueue.m */; };
+		1BACBC251D6AC14200A18110 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BACBC201D6AC14200A18110 /* FMResultSet.m */; };
+		1BACBC281D6AC1B600A18110 /* YHPFMDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BACBC271D6AC1B600A18110 /* YHPFMDBModel.m */; };
+		1BACBC2B1D6AC1F800A18110 /* YHPFMDBTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BACBC2A1D6AC1F800A18110 /* YHPFMDBTools.m */; };
 		1BB1FC501D600D4D008D21E1 /* YHPMapBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BB1FC4F1D600D4D008D21E1 /* YHPMapBoxViewController.m */; };
 		1BFC27581D648C5000BAA5DA /* Bugly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFC27571D648C5000BAA5DA /* Bugly.framework */; };
 		1BFC275A1D648C9B00BAA5DA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFC27591D648C9B00BAA5DA /* SystemConfiguration.framework */; };
@@ -111,6 +118,21 @@
 		1B47D3D51D60567E00544408 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		1BACBC121D6ABE1700A18110 /* YHPFMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPFMDBViewController.h; sourceTree = "<group>"; };
 		1BACBC131D6ABE1700A18110 /* YHPFMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHPFMDBViewController.m; sourceTree = "<group>"; };
+		1BACBC161D6AC14200A18110 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		1BACBC171D6AC14200A18110 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		1BACBC181D6AC14200A18110 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		1BACBC191D6AC14200A18110 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		1BACBC1A1D6AC14200A18110 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		1BACBC1B1D6AC14200A18110 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		1BACBC1C1D6AC14200A18110 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		1BACBC1D1D6AC14200A18110 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		1BACBC1E1D6AC14200A18110 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		1BACBC1F1D6AC14200A18110 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		1BACBC201D6AC14200A18110 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		1BACBC261D6AC1B600A18110 /* YHPFMDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPFMDBModel.h; sourceTree = "<group>"; };
+		1BACBC271D6AC1B600A18110 /* YHPFMDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHPFMDBModel.m; sourceTree = "<group>"; };
+		1BACBC291D6AC1F800A18110 /* YHPFMDBTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPFMDBTools.h; sourceTree = "<group>"; };
+		1BACBC2A1D6AC1F800A18110 /* YHPFMDBTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHPFMDBTools.m; sourceTree = "<group>"; };
 		1BB1FC4E1D600D4D008D21E1 /* YHPMapBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YHPMapBoxViewController.h; sourceTree = "<group>"; };
 		1BB1FC4F1D600D4D008D21E1 /* YHPMapBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YHPMapBoxViewController.m; sourceTree = "<group>"; };
 		1BFC27571D648C5000BAA5DA /* Bugly.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bugly.framework; sourceTree = "<group>"; };
@@ -268,6 +290,10 @@
 		1B029AE91D6AB9CC00FA9D52 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1BACBC261D6AC1B600A18110 /* YHPFMDBModel.h */,
+				1BACBC271D6AC1B600A18110 /* YHPFMDBModel.m */,
+				1BACBC291D6AC1F800A18110 /* YHPFMDBTools.h */,
+				1BACBC2A1D6AC1F800A18110 /* YHPFMDBTools.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -368,6 +394,24 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1BACBC151D6AC14200A18110 /* FMDB-master */ = {
+			isa = PBXGroup;
+			children = (
+				1BACBC161D6AC14200A18110 /* FMDatabase.h */,
+				1BACBC171D6AC14200A18110 /* FMDatabase.m */,
+				1BACBC181D6AC14200A18110 /* FMDatabaseAdditions.h */,
+				1BACBC191D6AC14200A18110 /* FMDatabaseAdditions.m */,
+				1BACBC1A1D6AC14200A18110 /* FMDatabasePool.h */,
+				1BACBC1B1D6AC14200A18110 /* FMDatabasePool.m */,
+				1BACBC1C1D6AC14200A18110 /* FMDatabaseQueue.h */,
+				1BACBC1D1D6AC14200A18110 /* FMDatabaseQueue.m */,
+				1BACBC1E1D6AC14200A18110 /* FMDB.h */,
+				1BACBC1F1D6AC14200A18110 /* FMResultSet.h */,
+				1BACBC201D6AC14200A18110 /* FMResultSet.m */,
+			);
+			path = "FMDB-master";
 			sourceTree = "<group>";
 		};
 		4F45D19F1D45C275005CF256 = {
@@ -771,6 +815,7 @@
 		4FCD0FCE1D45ED9300C341FC /* ThiedLib */ = {
 			isa = PBXGroup;
 			children = (
+				1BACBC151D6AC14200A18110 /* FMDB-master */,
 				1BFC27571D648C5000BAA5DA /* Bugly.framework */,
 				4F9F87031D49B2C00017873E /* MachaoTool */,
 				4FFDEBB61D48C22E0041CC49 /* MJExtension */,
@@ -1139,7 +1184,10 @@
 				1BACBC141D6ABE1700A18110 /* YHPFMDBViewController.m in Sources */,
 				4F9F86FD1D49A19D0017873E /* YHPLoginAccountParameter.m in Sources */,
 				1B06FE0B1D6728FF004FDA7D /* YHPBaseViewController.m in Sources */,
+				1BACBC211D6AC14200A18110 /* FMDatabase.m in Sources */,
+				1BACBC2B1D6AC1F800A18110 /* YHPFMDBTools.m in Sources */,
 				4F9F86FB1D49A19D0017873E /* YHPRegistNameViewController.m in Sources */,
+				1BACBC231D6AC14200A18110 /* FMDatabasePool.m in Sources */,
 				1BB1FC501D600D4D008D21E1 /* YHPMapBoxViewController.m in Sources */,
 				4F45D20D1D45C581005CF256 /* YHPHomeViewController.m in Sources */,
 				1B06FE0E1D6728FF004FDA7D /* YHPBaseViewModel.m in Sources */,
@@ -1161,6 +1209,7 @@
 				4FFDEBCB1D48C22E0041CC49 /* MJType.m in Sources */,
 				4FFDEBC91D48C22E0041CC49 /* MJFoundation.m in Sources */,
 				4F9F86F71D49A19D0017873E /* YHPGuideViewController.m in Sources */,
+				1BACBC281D6AC1B600A18110 /* YHPFMDBModel.m in Sources */,
 				1B06FE101D6728FF004FDA7D /* YHPGuideAccount.m in Sources */,
 				4FFDEBC81D48C22E0041CC49 /* MJConst.m in Sources */,
 				4F9F86F91D49A19D0017873E /* YHPStartViewController.m in Sources */,
@@ -1169,9 +1218,12 @@
 				4F9F870C1D49B2C00017873E /* ZXHMultiLineLabel.m in Sources */,
 				4FFDEBCC1D48C22E0041CC49 /* NSObject+MJCoding.m in Sources */,
 				1B06FE0F1D6728FF004FDA7D /* YHPGetPhoneReturnNumber.m in Sources */,
+				1BACBC241D6AC14200A18110 /* FMDatabaseQueue.m in Sources */,
 				4FBB711C1D47478000B4B122 /* YHPDiscoverViewController.m in Sources */,
 				4F9F86FF1D49A19D0017873E /* YHPRegisterGetPhoneNumerResult.m in Sources */,
+				1BACBC221D6AC14200A18110 /* FMDatabaseAdditions.m in Sources */,
 				4F45D1AD1D45C275005CF256 /* main.m in Sources */,
+				1BACBC251D6AC14200A18110 /* FMResultSet.m in Sources */,
 				4FFDEB991D48AF3B0041CC49 /* MBProgressHUD+NJ.m in Sources */,
 				4F9F86FA1D49A19D0017873E /* YHPRegistCityViewController.m in Sources */,
 				4FBB71191D47476D00B4B122 /* YHPNewsViewController.m in Sources */,

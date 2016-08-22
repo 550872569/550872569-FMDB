@@ -17,6 +17,7 @@
 #import "MJExtension.h"
 #import <Bugly/Bugly.h>
 #import <RongIMKit/RongIMKit.h>
+#import "FMDatabase.h"
 
 
 #import "MachaoTool.h"
@@ -30,6 +31,8 @@
 #import "YHPStartViewController.h"
 #import "YHPMapBoxViewController.h"
 #import "YHPFMDBViewController.h"
+#import "YHPFMDBModel.h"
+#import "YHPFMDBTools.h"
 
 
 
