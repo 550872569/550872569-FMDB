@@ -18,7 +18,7 @@
 #import <Bugly/Bugly.h>
 #import <RongIMKit/RongIMKit.h>
 #import "FMDatabase.h"
-
+#import "FaceppAPI.h"
 
 #import "MachaoTool.h"
 #import "UIView+Extension.h"
@@ -34,6 +34,7 @@
 #import "YHPFMDBModel.h"
 #import "YHPFMDBTools.h"
 #import "YHPFMDBCell.h"
+#import "YHPFaceRecognitionVC.h"
 
 
 #import "YHPAccount.h"

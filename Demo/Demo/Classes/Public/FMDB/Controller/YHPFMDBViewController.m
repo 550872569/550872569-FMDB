@@ -26,7 +26,7 @@
     self.view.backgroundColor = COLOR_WHITE;
     [self configUI];
 }
-
+#pragma mark 配置UI
 - (void)configUI {
     
     CGRect rectInsert = CGRectMake(10, 20, 100, 50);
@@ -53,14 +53,12 @@
 
     [self addTarget];
 }
+#pragma mark 添加监听
 - (void)addTarget {
     [_buttonInsert addTarget:self action:@selector(buttonInsertClick:) forControlEvents:UIControlEventTouchUpInside];
     [_buttonDelete addTarget:self action:@selector(buttonDeleteClick:) forControlEvents:UIControlEventTouchUpInside];
     [_buttonUpdate addTarget:self action:@selector(buttonUpdateClick:) forControlEvents:UIControlEventTouchUpInside];
     [_buttonCheck addTarget:self action:@selector(buttonCheckClick:) forControlEvents:UIControlEventTouchUpInside];
-}
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
 }
 #pragma mark buttonClick(增删改查)
 - (void)buttonInsertClick:(id)sender {
@@ -87,14 +85,11 @@
     [_tableview reloadData];
     
 }
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (_mArrayData.count) {
+#pragma mark tableviewDelegate
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
         return _mArrayData.count;
-    } else {
-        return 20;
-    }
 }
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     YHPFMDBModel *model = _mArrayData[indexPath.row];
     YHPFMDBCell *cell = [YHPFMDBCell cellWithTableView:tableView];
     cell.model = model;
@@ -104,6 +99,9 @@
     return 44;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSLog(@"indexPath%ld",indexPath.row);
+    NSLog(@"indexPath:%ld",indexPath.row);
+    int proId = (int)indexPath.row;
+    [YHPFMDBTools deleteProductWithProID:proId];
+    [_tableview reloadData];
 }
 @end

@@ -45,7 +45,7 @@ static FMDatabase *_db;
 }
 
 +(void)deleteProductWithProID:(int)proID {
-
+    
     NSString *sql = [NSString stringWithFormat:@"delete from t_product where proID = %d",proID];
     if ([_db executeUpdate:sql]) {
         NSLog(@"delete success");

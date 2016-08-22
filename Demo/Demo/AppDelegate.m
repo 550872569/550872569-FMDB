@@ -19,25 +19,30 @@
     [self configWindowAndRootVC];
     [self AFNetworkStatus];
 //    [self setCancel];
-//    [self configMapboxToken];
-    [self configBugly];
-//    [self configRCAppKey];
+    [self configAppKeyAndToken];
     return YES;
 }
-- (void)configRCAppKey {
-    [[RCIM sharedRCIM] initWithAppKey:kRCAppKey];
-}
-- (void)configBugly {
-    [Bugly startWithAppId:kBuglyAppID];
-}
-- (void)configMapboxToken {
-    [MGLAccountManager setAccessToken:kMapBoxToken];
+- (void)configAppKeyAndToken {
+
+    [[RCIM sharedRCIM] initWithAppKey:kRCAppKey];   //融云即时通讯
+    [Bugly startWithAppId:kBuglyAppID];             // bug收集
+    [MGLAccountManager setAccessToken:kMapBoxToken];//Mapbox地图
+    /** face++ 人脸识别 */
+    [FaceppAPI initWithApiKey:kAppKeyFace andApiSecret:kAppSecretFace
+                    andRegion:APIServerRegionCN];
+    [FaceppAPI setDebugMode:YES];
+    NSData *imageData = UIImageJPEGRepresentation(
+                                                  [UIImage imageNamed:@"sample.jpg"], 100);
+    FaceppResult *result = [[FaceppAPI detection] detectWithURL:nil
+                                                    orImageData:imageData];
+    NSLog(@"result%@",result);
 }
 /** 配置window + rootVC */
 - (void)configWindowAndRootVC {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-//    self.window.rootViewController = [YHPStartViewController new];
-    self.window.rootViewController = [YHPFMDBViewController new];
+//    self.window.rootViewController = [YHPStartViewController new]; //启动VC
+//    self.window.rootViewController = [YHPFMDBViewController new];  //FMBD
+    self.window.rootViewController = [YHPFaceRecognitionVC new];     //人脸识别
     [self.window makeKeyAndVisible];
 }
 /** 网络监测 */
