@@ -59,11 +59,15 @@
     [button setTitle:title forState:UIControlStateNormal];
     [button setTitleColor:titleColor forState:UIControlStateNormal];
     [button setBackgroundColor:backgroundColor];
-    [button setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
-    [button setBackgroundImage:[UIImage imageNamed:backgroundImage] forState:UIControlStateNormal];
+    if (image.length) {
+        [button setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+    }
+    if (backgroundImage.length) {
+        [button setBackgroundImage:[UIImage imageNamed:backgroundImage] forState:UIControlStateNormal];
+    }
     return button;
 }
-+(UILabel *)labelWithTitle:(NSString *)title titleFont:(CGFloat)font backgroundColor:(UIColor *)backgroundColor textAlignment:(NSTextAlignment)textAlignment ract:(CGRect)ract numberOfLines:(NSInteger)numberOfLines {
++ (UILabel *)labelWithTitle:(NSString *)title titleFont:(CGFloat)font backgroundColor:(UIColor *)backgroundColor textAlignment:(NSTextAlignment)textAlignment ract:(CGRect)ract numberOfLines:(NSInteger)numberOfLines {
     UILabel *label = [[UILabel alloc]init];
     [label setText:title];
     [label setFrame:ract];

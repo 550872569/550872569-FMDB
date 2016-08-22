@@ -13,9 +13,9 @@
 //增
 +(void)insertProduct:(YHPFMDBModel *)model;
 //删
-+(void)deleteProductWithProNo:(int) proNo;
++(void)deleteProductWithProID:(int)proID;
 //改
-+(void)updateProductWithModel:(YHPFMDBModel *)model proNo:(int)proNo;
++(void)updateProductWithModel:(YHPFMDBModel *)model proID:(int)proID;
 //查
 +(NSArray *)quertyAllProducts;
 

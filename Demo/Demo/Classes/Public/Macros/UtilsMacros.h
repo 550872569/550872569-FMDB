@@ -41,7 +41,21 @@
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #define RGB(r,g,b) RGBA(r,g,b,1.0f)
 #define COLOR_RANDOM [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1];
+#define COLOR_RED [UIColor redColor]
+#define COLOR_WHITE [UIColor whiteColor]
+#define COLOR_GRAY [UIColor grayColor]
+#define COLOR [UIColor greenColor]
+#define COLOR_YELLOW [UIColor yellowColor]
+#define COLOR_BLUE [UIColor blueColor]
+#define COLOR_BROWN [UIColor brownColor]
+#define COLOR_BLACK [UIColor blackColor]
+#define COLOR_DARK [UIColor darkGrayColor]
+#define COLOR_LIGHTGRAY [UIColor lightGrayColor]
+#define COLOR_ORANGE [UIColor orangeColor]
+#define COLOR_PURPLE [UIColor purpleColor]
+#define COLOR_CLEARN [UIColor clearColor]
 
+#define UIImage(image) [UIImage imageNamed:@"image"]
 
 #define IsPortrait ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait || [UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)
 

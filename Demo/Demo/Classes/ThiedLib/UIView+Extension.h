@@ -45,8 +45,11 @@
  *  @param title           文字
  *  @param font            字体
  *  @param backgroundColor 背景颜色
+ *  @param textAlignment   居中样式
+ *  @param ract            frame
+ *  @param numberOfLines   行数
  *
  *  @return label
  */
-+ (UILabel *)labelWithTitle:(NSString *)title titleFont:(CGFloat)font backgroundColor:(UIColor *)backgroundColor;
++ (UILabel *)labelWithTitle:(NSString *)title titleFont:(CGFloat)font backgroundColor:(UIColor *)backgroundColor textAlignment:(NSTextAlignment)textAlignment ract:(CGRect)ract numberOfLines:(NSInteger)numberOfLines;
 @end

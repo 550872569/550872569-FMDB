@@ -33,7 +33,7 @@
 #import "YHPFMDBViewController.h"
 #import "YHPFMDBModel.h"
 #import "YHPFMDBTools.h"
-
+#import "YHPFMDBCell.h"
 
 
 #import "YHPAccount.h"
